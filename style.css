@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 *,
 *::after,
 *::before {
@@ -14,7 +16,7 @@ html {
 
 body {
     position: relative;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
     font-size: 13px;
     line-height: 18px;
@@ -103,6 +105,7 @@ body {
     display: block;
     color:#A5A3B9;
     padding-top: 30px;
+    text-transform: uppercase;
 }
 
 .product-price {
