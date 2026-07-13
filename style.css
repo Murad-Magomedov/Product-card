@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 *,
-*::after,
-*::before {
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -10,35 +9,39 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height:100vh;
     background-color: rgb(220, 218, 218);
 }
 
-body {
+body{
+    margin: 0;
+}
+
+.page {
     position: relative;
     font-family: 'Montserrat', Arial, sans-serif;
-    margin: 0;
     font-size: 13px;
     line-height: 18px;
-    color:#515076;
+    color: #515076;
     width: 1280px;
+    min-height: 1715px;
     background-color: #ffffff;
 }
 
-.decor-dandelions {
-    background-image: url("img/Dandelions.png");
+.page__decor--dandelions {
+    background-image: url("img/Dandelions_bg.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     top: 60px;
     right: auto;
-    left: 85px;
+    left:85px;
     width: 790px;
     height: 697px;
     z-index: 1;
 }
 
-.title {
+.page__title {
     position: relative;
     z-index: 2;
     font-size: 70px;
@@ -50,65 +53,65 @@ body {
     padding-top: 220px;
 }
 
-.list-products {
+.product-list {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    width: 1112px;
-    border: none;
+    width:1110px;
+    min-height: 1191px;
     display: flex;
-    gap: 45px;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 45px;
 }
 
-.list-products > li > h2 {
-    margin-top: 5px;
-}
-
-.list-products li h2 + p {
-    margin-top: 5px;
-}
-
-.product-ingredients {
-    margin-top: 15px;
-}
-
-.product-ingredients ul {
-    padding-left: 15px;
-    margin-left: 0;
-    list-style-position: outside;
-}
-
-.product-ingredients ul li::marker {
-    font-size: 1.5em;
-}
-
-.list-products > li {
+.product-list__item-product {
     position: relative;
-    border: none;
     padding: 25px;
     list-style: none;
     width: 340px;
-    height: 573px;
+    min-height: 573px;
     background-color: #F7F7FA;
     z-index: 2;
 }
 
-.list-products img {
+.product__image {
     width: 100%;
+    height: auto;
 }
 
-.skin-type {
+.product__skin-type {
     font-size: 12px;
     line-height: 24px;
     display: block;
-    color:#A5A3B9;
+    color: #A5A3B9;
     padding-top: 30px;
     text-transform: uppercase;
 }
 
-.product-price {
+.product__title {
+    margin-top: 5px;
+}
+
+.product__description {
+    margin-top: 5px;
+}
+
+.product__ingredients {
+    margin-top: 15px;
+}
+
+.product__ingredients-list {
+    padding-left: 20px;
+    margin-left: 0;
+    list-style-position: outside;
+}
+
+.product__ingredients-item::marker {
+    font-size: 1.5em;
+}
+
+.product__price {
     font-size: 20px;
     line-height: 24px;
     display: flex;
