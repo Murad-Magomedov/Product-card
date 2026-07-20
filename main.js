@@ -41,7 +41,7 @@ function outputConsoleLog(message) {
 const pageTitle = document.querySelector('.page__title');
 
 pageTitle.addEventListener('mouseenter', () => {
-    console.log('Пользователь навёл курсор на главный заголовок страницы');
+    console.log('Выбери свой продукт');
 });
 
 const changeBtnColorBtn = document.querySelector('#change-button-color-btn');
