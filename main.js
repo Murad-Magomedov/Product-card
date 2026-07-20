@@ -41,7 +41,7 @@ function outputConsoleLog(message) {
 const pageTitle = document.querySelector('.page__title');
 
 pageTitle.addEventListener('mouseenter', () => {
-    console.log('Выбери свой продукт');
+    console.log(pageTitle.textContent);
 });
 
 const changeBtnColorBtn = document.querySelector('#change-button-color-btn');
