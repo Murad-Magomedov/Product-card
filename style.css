@@ -49,14 +49,67 @@ body{
     line-height: 78px;
     text-align: center;
     margin: 0;
-    padding-bottom: 110px;
+    margin-bottom: 110px;
     padding-top: 220px;
+}
+
+.buttons {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 0;
+}
+
+#change-card-color-btn,
+#change-allcard-color-btn,
+#open-google-btn,
+#output-console-log-btn,
+#change-button-color-btn {
+    width: 200px;
+    color: #515076;
+    font-size: 13px;
+    font-weight: 900;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.356);
+    transition: color 0.15s, background-color 0.15s;
+    background-color: #F7F7FA;
+}
+
+#change-card-color-btn:hover,
+#change-allcard-color-btn:hover,
+#open-google-btn:hover,
+#output-console-log-btn:hover,
+#change-button-color-btn:hover {
+    background-color: #515076;
+    color: #F7F7FA;
+}
+
+#change-card-color-btn:active,
+#change-allcard-color-btn:active,
+#open-google-btn:active,
+#output-console-log-btn:active,
+#change-button-color-btn:active {
+    transform: scale(0.90);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 10);
+    background-color: #6161be;
+}
+
+#change-button-color-btn.btn-active {
+    background-color: #f6039d6a;
+    color: #ffffff;
 }
 
 .product-list {
     list-style: none;
     padding: 0;
     margin: 0 auto;
+    margin-bottom:45px;
     width:1110px;
     min-height: 1191px;
     display: flex;
@@ -65,7 +118,7 @@ body{
     gap: 45px;
 }
 
-.product-list__item-product {
+.product-list__item {
     position: relative;
     padding: 25px;
     list-style: none;
@@ -75,12 +128,12 @@ body{
     z-index: 2;
 }
 
-.product__image {
+.product-list__image {
     width: 100%;
     height: auto;
 }
 
-.product__skin-type {
+.product-list__skin-type {
     font-size: 12px;
     line-height: 24px;
     display: block;
@@ -89,29 +142,29 @@ body{
     text-transform: uppercase;
 }
 
-.product__title {
+.product-list__title {
     margin-top: 5px;
 }
 
-.product__description {
+.product-list__description {
     margin-top: 5px;
 }
 
-.product__ingredients {
+.product-list__ingredients {
     margin-top: 15px;
 }
 
-.product__ingredients-list {
+.product-list__ingredients-list {
     padding-left: 20px;
     margin-left: 0;
     list-style-position: outside;
 }
 
-.product__ingredients-item::marker {
+.product-list__ingredients-item::marker {
     font-size: 1.5em;
 }
 
-.product__price {
+.product-list__price {
     font-size: 20px;
     line-height: 24px;
     display: flex;
