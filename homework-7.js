@@ -14,7 +14,8 @@ console.log(message)
 // Задание №2
 
 const LIGHT_SPEED = 299792458;
-const speed = LIGHT_SPEED;
+
+function getSpeedType(speed) {
 
     if (speed > LIGHT_SPEED) {
         console.log('Сверхсветовая скорость')
@@ -23,18 +24,25 @@ const speed = LIGHT_SPEED;
     } else {
         console.log('Скорость света')
     }
+}
+
+getSpeedType(speed = LIGHT_SPEED)
 
 // Задание №3
 
 let tea = 'Чай Липтон';
 let price = 500;
-let budget = 350;
 
+function buyTea (budget) {
     if (budget >= price) {
         console.log(`${tea} приобретён. Спасибо за покупку!`)
     } else {
         console.log(`Вам не хватает ${price - budget}$, пополните баланс`)
     }
+}
+
+buyTea ("350")
+
 
 // Задание №4
 
