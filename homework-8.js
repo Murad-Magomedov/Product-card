@@ -183,6 +183,6 @@ function checkRarity(booksArray) {
     });
 }
 
-const processedBooks = checkRarity(beginnerEnglishIslamicBooks);
+const processedBooks = checkRarity(globalBeginnerIslamicBooks);
 
 console.log(processedBooks);
