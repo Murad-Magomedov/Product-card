@@ -13,6 +13,7 @@ const filterArray = numbers.filter(number => number >= 5);
 //  проверить есть ли в массиве какая-то определенная сущность.
 
 const furnitureList = ["Диван", "Стул", "Кровать", "Стол", "Камод"];
+    console.log(furnitureList);
 const hasTable = furnitureList.includes("Стол");
     console.log(hasTable);
 
@@ -20,13 +21,13 @@ const hasTable = furnitureList.includes("Стол");
 //  и изменять его порядок на противоположный ("переворачивать").
 //  Два вышеуказанных массива с помощью этой функции перевернуть.
 
-const reverseArrays = array => array.reverse();
+const reverseArrays = array => [...array].reverse();
 
-reverseArrays(numbers);
-reverseArrays(furnitureList);
+const reverseNumbers = reverseArrays(numbers);
+const reverseFurniture = reverseArrays(furnitureList);
 
-    console.log(numbers);
-    console.log(furnitureList);
+    console.log(reverseNumbers);
+    console.log(reverseFurniture);
 
 
 // - - - Уровень Второй - - - 
